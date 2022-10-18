@@ -6,6 +6,69 @@
 
 .container{
     max-width:1440px;
-    width:80%;
-    margin:auto;
+    width:60%;
+    margin: 70px auto;
+}
+body{
+    background-color: hsl(30, 38%, 92%);
+}
+
+.grid{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "aside section";
+}
+
+.item-1{
+    grid-area:aside;
+
+}
+.item-2{
+    grid-area:section;
+    background-color: hsl(0, 0%, 100%);
+}
+
+.parfume-img{
+    max-width:600px;
+    height:900px;
+    width:100%;
+    object-fit:cover;
+
+}
+.about{
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  
+}
+.grid-container{
+    width:60%;
+    margin: 50px auto;
+}
+h2{
+    font-size:16px;
+    font-family:Montserrat;
+    font-weight:500;
+    letter-spacing: 3px;
+    color:grey;
+    margin-bottom:30px;
+   
+}
+h1{
+    font-family:Fraunces;
+    font-weight:900;
+    font-size: 36px;
+    text-align: left;
+    margin-bottom:30px;
+   
+   
+}
+
+p{
+    font-size:15px;
+    font-family:Montserrat;
+    color:grey;
+    line-height: -2px;
+    letter-spacing: 1px;
 }
