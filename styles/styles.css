@@ -15,8 +15,7 @@ body{
 
 .grid{
     display:grid;
-    grid-template-columns: 1fr 1fr;
-   
+    grid-template-columns: 1fr 1fr; 
     grid-template-areas: 
     "aside section";
 }
@@ -29,7 +28,9 @@ body{
     grid-area:section;
     background-color: hsl(0, 0%, 100%);
 }
-
+.mobile{
+    display:none;
+}
 .parfume-img{
     max-width:600px;
     height:600px;
@@ -115,4 +116,39 @@ p{
     font-weight:900;
     font-family:Fraunces;
     padding-left:10px;
+}
+
+@media (max-width:1024px){
+    .grid{
+      
+        grid-template-columns:1fr; 
+        grid-template-areas: 
+        'aside'
+        'section';
+    }
+ .parfume-img{
+    display:none;
+ }
+ .mobile{
+    display:block;
+    max-width:689px;
+    width:100%;
+   
+    object-fit:cover;
+ }
+
+  .grid-container{
+  
+    width:90%;
+    margin:50px auto;
+  }  
+  .prices{
+  
+    justify-content: flex-start;
+  
+}
+
+.initial{
+   padding-left:10px;
+}
 }
